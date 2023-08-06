@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="mission.css">
+    <script src="my.js"></script>
+    <title>dr. ranadeep halder</title>
+</head>
+
+<body>
+    <!------------------------------ nav bar ------------------------------>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="#">Dr. R Halder</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="INDEX.html">Home</a></li>
+                <li><a href="about us.html">About</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="about-us">
+        <div class="about">
+            <!--<img src="girl.png" class="pic">-->
+            <div class="text">
+                <h2>About Us</h2>
+                <h5>Hi, I'm<span> Dr. Ranadip Halder  </span>an Orthopedic Consultant, <br>Trauma, Arthroscopic &<br> Joint
+                    Replacement , <br>Spine <span>Surgeon</span></h5>
+                <p><p><span>Dr. Halder</span></p>
+                <h5>provide the highest quality of orthopedic care</h5>
+                <p>
+                    The mission of Dr. Ranadip Halder is to provide the highest quality of orthopedic care to our
+                    patients. His committed to delivering personalized and comprehensive treatment plans that help
+                    our patients recover as quickly and safely as possible.
+
+                    He believes in building strong relationships with the patient, and his dedicated to providing an
+                    exceptional patient experience. His team is highly skilled and use the latest techniques and
+                    technologies to diagnose, treat, and manage a wide range of musculoskeletal conditions and
+                    injuries.
+
+                    His goal is to help the patient get back to their best, and he is passionate about making a
+                    positive impact in their lives. He is committed to ongoing education and training, and he stays
+                    up-to-date on the latest advancements in orthopedic care to ensure that he is providing the best
+                    possible care to patients.</p>
+
+                <br /><br />
+               <h5> highly-skilled and experienced orthopedic surgeon</h5>
+                <br />
+                <p>
+                    Our team has been leding by Dr. Ranadip Halder a highly-skilled and experienced orthopedic surgeon who
+                    has dedicated his career to helping patients overcome musculoskeletal conditions and injuries. With
+                    years of training and experience, he and his team are committed to providing personalized and
+                    comprehensive care to help patients recover as quickly and safely as possible.<br>
+    
+                    Our state-of-the-art facility is equipped with the latest technology and equipment, allowing us to offer
+                    the most advanced treatments and procedures available. From joint replacements to sports injuries, we
+                    are dedicated to helping our patients achieve their best possible outcomes.We are proud to be a part of
+                    Dr. Ranadip Halder's team.<br>
+                    If you have any questions or would like to schedule an appointment, please don’t hesitate to contact us.
+                    We look forward to helping you get back to your best!
+                </p>
+                <h5>comprehensive and personalized care</h5>
+    <p>Dedicated to providing comprehensive and personalized care for musculoskeletal conditions and
+        injuries. Our team of experienced surgeons and specialists use the latest techniques and
+        technologies to diagnose, treat and manage a wide range of conditions, including joint
+        replacements, sports injuries, spinal problems, and more. Contact us today to schedule an
+        appointment..</p><br></p>
+                <!-- <div class="data">
+                    <a href="#" class="hire">Hire Me</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>Copyright © 2023 <span class="color">DS</span>Saha<span class="color">.</span> Halder | All rights
+                reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

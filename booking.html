@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome CDN-->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="booking.css">
+  <script src="my.js"></script>
+  <title>About us page html</title>
+</head>
+
+<body>
+<!------------------------------ nav bar ------------------------------>
+<nav class="navbar">
+  <div class="content">
+      <div class="logo">
+          <a href="#">Dr. R Halder</a>
+      </div>
+      <ul class="menu-list">
+          <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+          </div>
+          <li><a href="INDEX.html">Home</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="mission.html">Our Mission</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+      </ul>
+      <div class="icon menu-btn">
+          <i class="DR. HALDER"></i>
+      </div>
+  </div>
+</nav>
+  <section>
+    <div class="row">
+      <h2 class="section-heading">CHAMBERS</h2>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            
+          </div>
+          <h3>কাটোয়া </h3>
+          <p>কাছারী রোড (হাসপাতাল মোড়) <BR/> মডার্ণ মেডিকেল সেন্টারের গলি</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            
+          </div>
+          <H3>কোলকাতা</H3>
+                            <P>
+                            <ul>
+                                নিউ মায়া মেডিকেল ( বাবলাতলা, কোলকাতা)<BR/> 
+                                ওহিও হাসপাতাল (নিউটাউন, কোলকাতা)
+                            </ul>
+                            </P>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            
+          </div>
+          <h3>নবদ্বীপ </h3>
+           <p>কিওর এক্সরে ক্লিনিক <BR/>(বুড়ো শিবতলা, নবদ্বীপ )</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            
+          </div>
+          <h3> বর্ধমান</h3>
+             <p> দি সান হাসপাতাল
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            
+          </div>
+          <h3>কালেখা তলা </h3>
+          <p>বৈদ্য মেডিকেল</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">           
+          </div>
+          <h3>মাইস </h3>
+          <p>দেবগ্রাম, নদীয়া</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            
+          </div>
+          <h3>ফলেয়া</h3>
+          <p>মা তারা মেডিকেল(মেরতলা, ফলেয়া)</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            
+          </div>
+          <h3> দাঁইহাট </h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            
+          </div>
+          <h3>পারুলিয়া</h3>
+          <p>ব্রহ্মানন্দ ফার্মেসী</p>
+        </div>
+      </div>
+    </div>
+    <div class="data">
+      <a href="TEL:+919007867179" class="hire"> BOOK HERE </a>
+  </div>
+  </section>
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = () => {
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+    }
+    cancelBtn.onclick = () => {
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+    }
+    window.onscroll = () => {
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+</script>
+<script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
